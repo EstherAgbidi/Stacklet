@@ -77,7 +77,7 @@
   )
 )
 
-;; Add liquidity to a pool
+;; Add liquidity to pool
 (define-public (add-liquidity (pool-id uint) (amount-x uint) (amount-y uint))
   (let (
     (pool (unwrap! (map-get? pools { pool-id: pool-id }) (err ERR_POOL_DOES_NOT_EXIST)))
